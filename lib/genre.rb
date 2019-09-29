@@ -30,6 +30,6 @@ class Genre
   end 
   
   def artist 
-    songs.collect {|song| song.artist}.uniq
+    self.songs.collect {|song| song.artist}.uniq
   end
 end 
