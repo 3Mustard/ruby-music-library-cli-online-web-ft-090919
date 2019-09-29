@@ -1,4 +1,6 @@
+require "./lib/concerns/findable.rb"
 class Genre
+  extend
   attr_accessor :name, :songs  
   @@all = []
   
