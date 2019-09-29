@@ -49,6 +49,10 @@ class MusicLibraryController
     end 
   end
   
+  def list_artist
+    puts
+  end 
+  
 end 
 
 
