@@ -6,6 +6,6 @@ class MusicImporter
   end 
   
   def files 
-    
+    Dir("#{path}")
   end 
 end 
