@@ -40,6 +40,7 @@ class Song
   
   def self.new_from_filename(filename)
     artist, song, genre = filename.split(" - ")
+    genre = genre.gsub(".mp3", "")
     
   end 
 end 
