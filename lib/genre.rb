@@ -1,6 +1,6 @@
 require "./lib/concerns/findable.rb"
 class Genre
-  extend
+  extend Concerns::Findable
   attr_accessor :name, :songs  
   @@all = []
   
