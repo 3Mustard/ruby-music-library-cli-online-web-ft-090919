@@ -6,6 +6,6 @@ class MusicImporter
   end 
   
   def files 
-    Dir("#{path}/*").map {|file| file}
+    Dir.glob("#{path}/*").map {|file| file}
   end 
 end 
