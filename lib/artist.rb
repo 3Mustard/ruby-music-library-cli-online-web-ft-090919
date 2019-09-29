@@ -38,6 +38,6 @@ class Artist
   end
   
   def genres 
-    songs.collect { |song| song.genre}.uniq
+    self.songs.collect { |song| song.genre}.uniq
   end
 end 
