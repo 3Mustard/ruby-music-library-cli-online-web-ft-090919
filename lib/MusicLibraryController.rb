@@ -20,6 +20,7 @@ class MusicLibraryController
     input = gets.chomp
     case input 
     when 'list songs'
+      list_songs
     when 'list artists'
     when 'list genres'
     when 'list artist'
@@ -35,4 +36,21 @@ class MusicLibraryController
       puts "#{index}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
     end 
   end 
+  
+  def list_artists
+    Artist.all.sort_by(&:name).each.with_index(1) do |artist,index|
+      
+  end 
+  
 end 
+
+
+
+
+
+
+
+
+
+
+
