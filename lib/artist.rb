@@ -38,6 +38,9 @@ class Artist
   end
   
   def genres 
-    self.songs.map { |song| song.genre}.uniq
+     genres = self.songs.collect do |song|
+      song.genre
+    end
+    genres.uniq
   end
 end 
